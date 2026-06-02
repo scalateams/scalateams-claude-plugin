@@ -1,0 +1,29 @@
+name: Validate plugin
+
+on:
+  pull_request:
+    paths:
+      - ".claude-plugin/**"
+      - "scalateams/**"
+      - ".github/workflows/validate.yml"
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Validate marketplace manifest
+        run: claude plugin validate .
+
+      - name: Validate plugin and agents
+        run: claude plugin validate ./scalateams
