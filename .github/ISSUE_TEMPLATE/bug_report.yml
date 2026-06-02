@@ -1,0 +1,53 @@
+name: Agent bug report
+description: An agent gave wrong, outdated, or broken advice
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. The most common issue is an agent giving advice that's
+        outdated for a newer library version — the details below help us pin it down.
+  - type: input
+    id: agent
+    attributes:
+      label: Which agent?
+      description: e.g. `zio-core-specialist`, `doobie-specialist`
+      placeholder: "<name>-specialist"
+    validations:
+      required: true
+  - type: input
+    id: library-version
+    attributes:
+      label: Library + version
+      description: The library and version you were working with.
+      placeholder: "zio 2.1.x"
+    validations:
+      required: true
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin version
+      description: From `scalateams/.claude-plugin/plugin.json`, or `claude plugin list`.
+      placeholder: "0.1.0"
+    validations:
+      required: false
+  - type: textarea
+    id: asked
+    attributes:
+      label: What you asked
+      description: The prompt or task you gave Claude Code.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened
+      description: The advice or output you got. Paste relevant snippets.
+    validations:
+      required: true
