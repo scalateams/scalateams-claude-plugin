@@ -22,7 +22,7 @@ claude plugin install scalateams@scalateams
 
 ## What you get
 
-31 specialist agents covering:
+Specialist agents covering:
 
 - **Build:** sbt, Mill
 - **Effect systems:** Pekko (actor, streams, persistence, HTTP, Kafka), ZIO (core, streams, HTTP, Kafka), Cats Effect (core, fs2, http4s, fs2-kafka)
