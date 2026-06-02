@@ -1,0 +1,25 @@
+{
+  "name": "scalateams",
+  "version": "0.1.0",
+  "description": "Specialist agents for the Scala ecosystem. One agent per library or concern — narrow, focused, low context overhead.",
+  "author": {
+    "name": "Scala Teams",
+    "url": "https://www.scalateams.com"
+  },
+  "homepage": "https://www.scalateams.com",
+  "repository": "https://github.com/scalateams/scalateams-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "scala",
+    "scala3",
+    "zio",
+    "pekko",
+    "cats-effect",
+    "sbt",
+    "mill",
+    "tapir",
+    "doobie",
+    "fp",
+    "claude-code"
+  ]
+}

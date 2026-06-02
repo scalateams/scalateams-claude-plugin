@@ -1,0 +1,14 @@
+{
+  "name": "scalateams",
+  "owner": {
+    "name": "Scala Teams",
+    "url": "https://github.com/scalateams"
+  },
+  "plugins": [
+    {
+      "name": "scalateams",
+      "source": "./scalateams",
+      "description": "Specialist agents for the Scala ecosystem — effect systems, build tools, codecs, HTTP, databases, and testing."
+    }
+  ]
+}
