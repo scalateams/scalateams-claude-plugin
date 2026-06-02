@@ -1,4 +1,4 @@
-# CLAUDE.md — scalateams plugin
+# CLAUDE.md — Scala Teams plugin
 
 This is a Claude Code plugin providing specialist agents for the Scala ecosystem.
 

@@ -1,4 +1,4 @@
-# scalateams Claude Code plugin
+# Scala Teams Claude Code plugin
 
 Specialist agents for the Scala ecosystem, designed for use with [Claude Code](https://claude.com/claude-code).
 
