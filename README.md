@@ -49,6 +49,10 @@ PRs welcome. Add a specialist by:
 2. Keeping the agent body under ~150 lines
 3. Listing it in `CLAUDE.md`
 
+## Privacy
+
+The plugin collects nothing — no telemetry, no analytics, no network calls of its own. See [PRIVACY.md](./PRIVACY.md).
+
 ## License
 
 MIT

@@ -9,6 +9,7 @@ The plugin version lives in `scalateams/.claude-plugin/plugin.json`.
 ## [Unreleased]
 
 ### Added
+- Privacy policy (`PRIVACY.md`) — the plugin collects no data.
 - Contribution, security, and code-of-conduct docs.
 - Issue and pull-request templates.
 - CI workflow that validates the marketplace manifest and every agent's frontmatter
