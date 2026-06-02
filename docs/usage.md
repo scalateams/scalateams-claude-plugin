@@ -1,6 +1,6 @@
 # Usage
 
-This plugin ships 31 specialist agents. Claude Code routes to them automatically based on each agent's `description` field — you don't usually need to name them explicitly. This page documents what triggers each one, what they can do, and how they compose.
+This plugin ships a set of specialist agents. Claude Code routes to them automatically based on each agent's `description` field — you don't usually need to name them explicitly. This page documents what triggers each one, what they can do, and how they compose.
 
 ## How routing works
 
@@ -17,7 +17,7 @@ You can also force-select an agent by name in your prompt ("use the `quill-speci
 | Capability | Agents |
 | --- | --- |
 | Read-only (review, navigate) | `codebase-explorer`, `scala2-fp-reviewer`, `scala3-fp-reviewer` |
-| Read-write (implement + review) | All 28 library specialists |
+| Read-write (implement + review) | Every library specialist (all agents except the read-only ones above) |
 
 Read-only agents have `tools: Read, Grep, Glob, Bash`. Read-write agents add `Write, Edit`.
 

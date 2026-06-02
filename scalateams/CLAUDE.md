@@ -10,7 +10,7 @@ When a task spans multiple libraries (e.g., a Tapir endpoint using Circe codecs 
 
 ## Agent inventory
 
-Single `agents/` directory, flat. 31 specialists organized below for human readability — they all live in the same folder.
+Single `agents/` directory, flat. Specialists are organized below for human readability — they all live in the same folder.
 
 ### Cross-cutting (3)
 - `scala2-fp-reviewer` — language-level FP review for Scala 2.13 idioms
