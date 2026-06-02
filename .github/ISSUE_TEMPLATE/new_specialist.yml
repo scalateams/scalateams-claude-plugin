@@ -1,0 +1,39 @@
+name: New specialist request
+description: Propose a new single-library / single-concern agent
+labels: ["enhancement", "new-agent"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We add agents that are **narrow** — one library or one concern. Proposals that
+        bundle several libraries into one agent won't fit the design.
+  - type: input
+    id: library
+    attributes:
+      label: Library or concern
+      placeholder: "e.g. sttp, fs2-grpc, zio-config"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: What would it cover?
+      description: The specific patterns, APIs, or reviews this specialist would own.
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: What is explicitly out of scope?
+      description: Where does it stop and hand off to another specialist?
+    validations:
+      required: false
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: Are you willing to draft it?
+      options:
+        - "Yes, I can open a PR"
+        - "No, just proposing"
+    validations:
+      required: true

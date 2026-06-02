@@ -1,5 +1,7 @@
 # Scala Teams Claude Code plugin
 
+[![Validate plugin](https://github.com/scalateams/scalateams-claude-plugin/actions/workflows/validate.yml/badge.svg)](https://github.com/scalateams/scalateams-claude-plugin/actions/workflows/validate.yml)
+
 Specialist agents for the Scala ecosystem, designed for use with [Claude Code](https://claude.com/claude-code).
 
 One agent per library or concern. No bloat.
