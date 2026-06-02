@@ -10,6 +10,12 @@ The plugin version lives in `scalateams/.claude-plugin/plugin.json`.
 
 ### Added
 - Privacy policy (`PRIVACY.md`) — the plugin collects no data.
+
+## [0.1.0] - 2026-06-02
+
+### Added
+- Initial release: 31 specialist agents covering build tools, effect systems
+  (Pekko, ZIO, Cats Effect), testing, API design, codecs, protocols, and databases.
 - Contribution, security, and code-of-conduct docs.
 - Issue and pull-request templates.
 - CI workflow that validates the marketplace manifest and every agent's frontmatter
@@ -20,11 +26,5 @@ The plugin version lives in `scalateams/.claude-plugin/plugin.json`.
 - `ce-core-specialist` frontmatter no longer fails YAML parsing (the description's
   `F[_]: Sync/...` is now quoted), so the agent loads with its metadata intact.
 
-## [0.1.0] - 2026-06-02
-
-### Added
-- Initial release: 31 specialist agents covering build tools, effect systems
-  (Pekko, ZIO, Cats Effect), testing, API design, codecs, protocols, and databases.
-
-[Unreleased]: https://github.com/scalateams/scalateams-claude-plugin/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/scalateams/scalateams-claude-plugin/releases/tag/v0.1.0
+[Unreleased]: https://github.com/scalateams/scalateams-claude-plugin/compare/scalateams--v0.1.0...HEAD
+[0.1.0]: https://github.com/scalateams/scalateams-claude-plugin/releases/tag/scalateams--v0.1.0
