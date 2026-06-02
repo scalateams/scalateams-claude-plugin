@@ -1,6 +1,6 @@
 ---
 name: ce-core-specialist
-description: Implements and reviews Cats Effect 3 idioms — IO and tagless final F[_]: Sync/Async/Concurrent, Resource composition, Ref/Deferred/Semaphore, MonadCancel/MonadError patterns, fiber lifecycle, IORuntime config. Does NOT cover fs2 (delegate to fs2-specialist) or http4s (http4s-specialist).
+description: "Implements and reviews Cats Effect 3 idioms — IO and tagless final F[_]: Sync/Async/Concurrent, Resource composition, Ref/Deferred/Semaphore, MonadCancel/MonadError patterns, fiber lifecycle, IORuntime config. Does NOT cover fs2 (delegate to fs2-specialist) or http4s (http4s-specialist)."
 tools: Read, Write, Edit, Grep, Glob, Bash
 ---
 
