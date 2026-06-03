@@ -10,6 +10,8 @@ The plugin version lives in `scalateams/.claude-plugin/plugin.json`.
 
 ### Added
 - Privacy policy (`PRIVACY.md`) — the plugin collects no data.
+- README: usage-examples section showing how prompts route to specialists,
+  and a terminal demo illustration (`docs/assets/demo.svg`).
 
 ## [0.1.0] - 2026-06-02
 
