@@ -1,6 +1,6 @@
 {
   "name": "scalateams",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Specialist agents for the Scala ecosystem. One agent per library or concern — narrow, focused, low context overhead.",
   "author": {
     "name": "Scala Teams",

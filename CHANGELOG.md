@@ -8,6 +8,8 @@ The plugin version lives in `scalateams/.claude-plugin/plugin.json`.
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-06-03
+
 ### Added
 - Privacy policy (`PRIVACY.md`) — the plugin collects no data.
 - README: usage-examples section showing how prompts route to specialists,
@@ -28,5 +30,6 @@ The plugin version lives in `scalateams/.claude-plugin/plugin.json`.
 - `ce-core-specialist` frontmatter no longer fails YAML parsing (the description's
   `F[_]: Sync/...` is now quoted), so the agent loads with its metadata intact.
 
-[Unreleased]: https://github.com/scalateams/scalateams-claude-plugin/compare/scalateams--v0.1.0...HEAD
+[Unreleased]: https://github.com/scalateams/scalateams-claude-plugin/compare/scalateams--v0.1.1...HEAD
+[0.1.1]: https://github.com/scalateams/scalateams-claude-plugin/compare/scalateams--v0.1.0...scalateams--v0.1.1
 [0.1.0]: https://github.com/scalateams/scalateams-claude-plugin/releases/tag/scalateams--v0.1.0
