@@ -6,6 +6,8 @@ Specialist agents for the Scala ecosystem, designed for use with [Claude Code](h
 
 One agent per library or concern. No bloat.
 
+![A Claude Code session routing a Doobie review to doobie-specialist, then chaining doobie-specialist and munit-specialist to fix the findings and add test coverage](./docs/assets/demo.svg)
+
 ## Install
 
 ```bash
@@ -34,6 +36,42 @@ Specialist agents covering:
 - **FP review:** separate Scala 2 and Scala 3 reviewers (the idiom catalogs differ enough to warrant the split)
 
 See [`docs/usage.md`](./docs/usage.md) for the full agent catalog, triggers, and composition patterns. See [`CLAUDE.md`](./CLAUDE.md) for design rationale.
+
+## Usage examples
+
+Claude Code routes to specialists automatically based on what you ask — you rarely need to name an agent. The library you mention is the routing signal:
+
+```text
+> review this Doobie query for transaction safety
+  → doobie-specialist
+
+> is this Scala 3 ADT idiomatic?
+  → scala3-fp-reviewer
+
+> add a streaming endpoint in zio-http
+  → zio-http-specialist
+```
+
+Tasks that cross library boundaries engage specialists in sequence:
+
+```text
+> wire up a Tapir endpoint with Circe codecs on http4s
+  → tapir-specialist → circe-specialist → http4s-specialist
+
+> consume Avro messages from Kafka in this Pekko service
+  → pekko-kafka-specialist → avro4s-specialist
+```
+
+You can also force a specific agent by name, or start with the explorer on an unfamiliar repo:
+
+```text
+> use the quill-specialist to review this dynamic query
+
+> scope this task — which specialists should we use?
+  → codebase-explorer (detects framework, Scala version, build tool)
+```
+
+More patterns, triggers, and the full catalog: [`docs/usage.md`](./docs/usage.md).
 
 ## Philosophy
 
